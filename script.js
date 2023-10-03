@@ -8,7 +8,6 @@ window.onload = function() {
       const date = now.getDate();
 
       let hours = now.getHours();
-      hours = 20;
       let greeting;
       if (hours >= 6 && hours < 12) {
           bg = "anime7.jpeg";
