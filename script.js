@@ -62,7 +62,7 @@ window.onload = function() {
         const target = event.target;
         if (target.tagName === 'IMG' && target.parentNode.tagName === 'TD') {
             const currentSrc = target.getAttribute('src');
-
+                if (parseFloat(getComputedStyle(calendar).opacity) > 0.1) {
             // Only toggle if the current icon is a bee or an angry icon
             if (currentSrc === 'bee.webp') {
                 target.setAttribute('src', 'angry.webp');
@@ -70,11 +70,15 @@ window.onload = function() {
                 target.setAttribute('src', 'bee.webp');
             } else if (currentSrc === 'birthday.png') {
                 greeting = 'Happy Birthday!!!!!!!!!'
+                if (document.getElementById('greeting').textContent != 'Happy Birthday!!!!!!!!!'){
                 document.getElementById('greeting').textContent = greeting;
+              } else {
+                document.getElementById('greeting').textContent = ''
+              }
             }
         }
     }
-
+}
 // Add event listener to the calendar
 document.getElementById('calendar').addEventListener('click', toggleIcon);
 
