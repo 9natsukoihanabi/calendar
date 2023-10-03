@@ -1,0 +1,68 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+      background-image: url('anime23.jpeg');
+      background-size: cover;
+      position: relative;  /* Make sure the body has a relative position */
+      height: 100vh;       /* Make the body full height of the viewport */
+      margin: 0;           /* Reset any default margins */
+      padding: 0;          /* Reset any default padding */
+      }
+
+.time-container {
+    position: absolute;  /* Absolutely position the container */
+    bottom: 0;           /* Align it to the bottom of the body */
+    width: 100%;         /* Make it span the entire width */
+    text-align: center;  /* Center the text inside the container */
+    padding: 10px 0;     /* Add some vertical padding for better appearance */
+}
+
+.textcolor{
+  color: white;
+}
+
+.text {
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: 	#FFC0CB;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 10px; /* Just to give some space between the time and the calendar */
+}
+
+table {
+    border-collapse: collapse; /* Collapses borders to avoid double borders */
+    margin: 0 auto; /* Centers the table horizontally */
+    opacity: 0;
+    top: 0px;
+}
+
+td {
+    border: 1px solid black;
+    width: 80px;
+    height: 80px;
+    text-align: left;
+    vertical-align: top;
+    background-color: #FFC0CB;
+    position: relative;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 5px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
