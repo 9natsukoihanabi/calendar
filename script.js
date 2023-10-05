@@ -10,13 +10,13 @@ window.onload = function() {
       let hours = now.getHours();
       let greeting;
       if (hours >= 6 && hours < 12) {
-          bg = "morning1.jpeg";
+          bg = "morning1.jpg";
           greeting = "Good Morning! (*^‿^*)";
       } else if (hours >= 12 && hours < 18) {
-          bg = "afternoon1.jpeg";
+          bg = "afternoon1.jpg";
           greeting = "Good Afternoon! (｡^‿^｡)" ;
       } else if (hours >= 18 && hours < 24) {
-          bg = "evening1.jpeg";
+          bg = "evening1.jpg";
           greeting = "Good Evening! (^‿^)" ;
       } else {
           bg = "anime6.jpeg";
@@ -85,7 +85,6 @@ document.getElementById('calendar').addEventListener('click', toggleIcon);
 }
 
 let currentOpacity = 0;  // Starting opacity
-let test = 'test'
 
 function adjustOpacity(direction) {
     if (direction === "up" && currentOpacity < 0.8) {
