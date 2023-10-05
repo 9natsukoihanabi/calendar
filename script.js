@@ -85,6 +85,7 @@ document.getElementById('calendar').addEventListener('click', toggleIcon);
 }
 
 let currentOpacity = 0;  // Starting opacity
+let test = 'test'
 
 function adjustOpacity(direction) {
     if (direction === "up" && currentOpacity < 0.8) {
