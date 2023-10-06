@@ -10,13 +10,13 @@ window.onload = function() {
       let hours = now.getHours();
       let greeting;
       if (hours >= 6 && hours < 12) {
-          bg = "anime7.jpeg";
+          bg = "morning1.jpg";
           greeting = "---- Good Morning ----";
       } else if (hours >= 12 && hours < 18) {
-          bg = "anime15.jpeg";
+          bg = "afternoon1.jpg";
           greeting = "---- Good Afternoon ----" ;
       } else if (hours >= 18 && hours < 24) {
-          bg = "anime19.jpeg";
+          bg = "evening1.jpg";
           greeting = "---- Good Evening ----" ;
       } else {
           bg = "anime6.jpeg";
